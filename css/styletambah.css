@@ -1,0 +1,83 @@
+/* Form label */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input field */
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Responsivitas */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+.report-box input[type="file"] {
+    width: 100%; /* Memastikan input file memenuhi lebar induk */
+    box-sizing: border-box; /* Menghitung padding dan border dalam lebar */
+}
+
+.report-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-box h2 {
+    text-align: center;
+}
+
+.report-box .form-group {
+    display: flex; /* Gunakan flexbox untuk menyusun label dan input */
+    flex-direction: column; /* Mengatur kolom */
+    margin-bottom: 15px; /* Jarak antar field */
+}
+
+.report-box label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Jarak antara label dan input */
+}
+
+.report-box input[type="text"],
+.report-box input[type="number"],
+.report-box input[type="file"] {
+    width: 100%; /* Memastikan semua input dan tombol lebar 100% */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Menghitung padding dan border dalam lebar */
+}
+
+.report-box textarea {
+    width: 100%; /* Memastikan textarea lebar 100% */
+    padding: 10px; /* Menyediakan padding yang sama */
+    border: 1px solid #ccc; /* Border yang sama dengan input field */
+    border-radius: 5px; /* Sudut membulat yang sama */
+    box-sizing: border-box; /* Menghitung padding dan border dalam lebar */
+    resize: vertical; /* Agar textarea bisa diubah ukuran secara vertikal */
+    min-height: 100px; /* Tinggi minimal untuk textarea */
+	margin-bottom: 15px;
+}
+
+.report-box select {
+    width: 100%; /* Memastikan select lebar 100% */
+    padding: 10px; /* Menyediakan padding yang sama */
+    border: 1px solid #ccc; /* Border yang sama dengan input field */
+    border-radius: 5px; /* Sudut membulat yang sama */
+    box-sizing: border-box; /* Menghitung padding dan border dalam lebar */
+	margin-bottom: 15px;
+}

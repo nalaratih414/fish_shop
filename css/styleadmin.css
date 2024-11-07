@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.navbar {
+    width: 200px;
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px;
+}
+
+.navbar h2 {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 15px 0;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown {
+    display: none;
+    padding-left: 10px;
+	margin-left: 20px;
+}
+
+.dropdown li {
+	background-color: #62d167;
+    margin: 0;
+}
+
+.dropdown li a {
+	content: "+";
+    padding: 10px;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px;
+}
+
+.welcome-message {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.logout-menu {
+    display: none;
+    align-items: center;
+}
+
+.logout-menu.show {
+    display: flex;
+}
+
+.logout-icon {
+    margin-right: 5px;
+}
+
+.logout {
+    text-decoration: none;
+    color: #fff;
+}
+
+.report-box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.search-box-data {
+    display: flex;
+	margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.search-box-data input {
+    padding: 10px;
+    width: 200px; /* Lebar dikurangi agar tidak terlalu lebar */
+}
+
+.search-box-data button {
+    padding: 10px;
+}
+
+.product-table-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product-table-container h3 {
+    margin: 0 0 10px 0;
+}
+
+.add-product-form {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-product-form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.add-product-form button {
+    padding: 10px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.product-table th {
+    background: #f2f2f2;
+}
+
+.arrow {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+
+.logo {
+    width: 100px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 10px; /* Jarak antara logo dan teks */
+    vertical-align: middle; /* Menjaga agar logo sejajar dengan teks */
+    border: 0px solid #000; /* Warna dan ketebalan bingkai */
+    border-radius: 5px; /* Menggunakan border-radius untuk sudut yang membulat */
+    padding: 5px; /* Ruang antara gambar dan bingkai */
+    background-color: #fff; /* Warna latar belakang di dalam bingkai */
+}
+
+.btn-custom-primary {
+    display: inline-block; /* Agar link berperilaku seperti tombol */
+    padding: 10px 15px; /* Memberikan padding */
+    color: white; /* Warna teks */
+    background-color: #007bff; /* Warna latar belakang (biru) */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    text-align: center; /* Memusatkan teks */
+}
+
+.btn-custom-primary:hover {
+    background-color: #0056b3; /* Warna saat hover */
+}
+
+.btn-custom-danger {
+    display: inline-block; /* Agar link berperilaku seperti tombol */
+    padding: 10px 15px; /* Memberikan padding */
+    color: white; /* Warna teks */
+    background-color: #dc3545; /* Warna latar belakang (biru) */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    text-align: center; /* Memusatkan teks */
+}
+
+.btn-custom-danger:hover {
+    background-color: #c7382e; /* Warna saat hover */
+}
+
+.btn-custom-warning {
+    display: inline-block; /* Agar link berperilaku seperti tombol */
+    padding: 10px 15px; /* Memberikan padding */
+    color: white; /* Warna teks */
+    background-color: #ffc107; /* Warna latar belakang (biru) */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    text-align: center; /* Memusatkan teks */
+}
+
+.btn-custom-warning:hover {
+    background-color: #e3ad0b; /* Warna saat hover */
+}
+
+.btn-custom-info {
+    display: inline-block; /* Agar link berperilaku seperti tombol */
+    padding: 10px 15px; /* Memberikan padding */
+    color: white; /* Warna teks */
+    background-color: #0dcaf0; /* Warna latar belakang (biru) */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    text-align: center; /* Memusatkan teks */
+}
+
+.btn-custom-info:hover {
+    background-color: ##0db0d1; /* Warna saat hover */
+}
+
+.btn-custom-save {
+    display: inline-block; /* Agar link berperilaku seperti tombol */
+    padding: 10px 15px; /* Memberikan padding */
+    color: white; /* Warna teks */
+    background-color: #4CAF50; /* Warna latar belakang (biru) */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    text-align: center; /* Memusatkan teks */
+}
+
+.btn-custom-save:hover {
+    background-color: #209925; /* Warna saat hover */
+}
